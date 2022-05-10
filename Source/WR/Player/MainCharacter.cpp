@@ -167,7 +167,7 @@ void AMainCharacter::Tick(float DeltaTime)
             //HipsTurn = FMath::Lerp<float, float>(HipsTurn, HipsTurn - amount, 0.9);
             FString Stat = FString::Printf(TEXT("forward amount: %f"), amount);
             GEngine->AddOnScreenDebugMessage(1, 2.0f, FColor::Green, Stat);
-             HipsTurn -= amount;
+            HipsTurn -= amount;
             GEngine->AddOnScreenDebugMessage(7, 2.0f, FColor::Cyan, FString::Printf(TEXT("HipsTurn: %f"), HipsTurn));
            
         }
